@@ -15,10 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //必须实现的方法
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 取得 tableView 目前使用的 cell
-        let cell =
-        tableView.dequeueReusableCell(
-            withIdentifier: "Cell", for: indexPath) as
-        UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
         
         // 設置 Accessory 按鈕樣式
         if indexPath.section == 1 {
@@ -27,8 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             } else if indexPath.row == 1 {
                 cell.accessoryType = .detailButton
             } else if indexPath.row == 2 {
-                cell.accessoryType =
-                    .detailDisclosureButton
+                cell.accessoryType = .detailDisclosureButton
             } else if indexPath.row == 3 {
                 cell.accessoryType = .disclosureIndicator
             }
@@ -46,9 +42,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     let info = [
-        ["1","2"],
-        ["3","4","5","6"]
-        
+        ["Button","Text"],
+        ["VStack","HStack","ZStack","Scroll"]
     ]
     
     override func viewDidLoad() {
@@ -67,8 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let myTableView = UITableView(frame: CGRect(
             x: 0, y: 20,
             width: fullScreenSize.width,
-            height: fullScreenSize.height - 20),
-                                      style: .grouped)
+            height: fullScreenSize.height - 20), style: .grouped)
         
         
         // 註冊 cell
@@ -99,10 +93,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func setUpTitle(){
         self.title = "Demo List"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "more",
-                                                                 style: .done,
-                                                                 target: self,
-                                                                 action: #selector(moreClick))
+        self.navigationItem.rightBarButtonItem =
+        UIBarButtonItem(title: "more",
+                    style: .done,
+                    target: self,
+                    action: #selector(moreClick))
     }
     
     
@@ -112,7 +107,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     // 點選 cell 後執行的動作
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消 cell 的選取狀態
         tableView.deselectRow(at: indexPath, animated: true)
 
@@ -123,19 +118,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // 點選 Accessory 按鈕後執行的動作
     // 必須設置 cell 的 accessoryType
     // 設置為 .DisclosureIndicator (向右箭頭)之外都會觸發
-    func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         let name = info[indexPath.section][indexPath.row]
         print("按下的是 \(name) 的 detail")
     }
 
     // 有幾組 section
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return info.count
     }
 
     // 每個 section 的標題
-    func tableView(tableView: UITableView,  titleForHeaderInSection section: Int) -> String? {
-        let title = section == 0 ? "籃球" : "棒球"
+    func tableView(_ tableView: UITableView,  titleForHeaderInSection section: Int) -> String? {
+        let title = section == 0 ? "UIKit" : "SwiftUI"
         return title
     }
     
