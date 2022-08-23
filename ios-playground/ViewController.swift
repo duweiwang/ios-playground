@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // 顯示的內容
         if let myLabel = cell.textLabel {
             myLabel.text =
-            "\(info[indexPath.section][indexPath.row])"
+            "\(info[indexPath.section][indexPath.row].name)"
         }
         
         return cell
@@ -42,8 +42,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     let info = [
-        ["Button","Text"],
-        ["VStack","HStack","ZStack","Scroll"]
+        [
+         DemoItem(name: "Button", vc: ButtonVC()),
+         DemoItem(name: "Text", vc: TextVC())
+        ],
+        [
+         DemoItem(name: "VStack", vc: ButtonVC()),
+         DemoItem(name: "HStack", vc: ButtonVC()),
+         DemoItem(name: "ZStack", vc: ButtonVC()),
+         DemoItem(name: "Scroll", vc: ButtonVC())
+        ]
     ]
     
     override func viewDidLoad() {
@@ -111,16 +119,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // 取消 cell 的選取狀態
         tableView.deselectRow(at: indexPath, animated: true)
 
-        let name = info[indexPath.section][indexPath.row]
-        print("選擇的是 \(name)")
+        let item = info[indexPath.section][indexPath.row]
+        
+        self.navigationController?.pushViewController(item.vc, animated: true)
+        
+        print("選擇的是 \(item.name)")
     }
 
     // 點選 Accessory 按鈕後執行的動作
     // 必須設置 cell 的 accessoryType
     // 設置為 .DisclosureIndicator (向右箭頭)之外都會觸發
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-        let name = info[indexPath.section][indexPath.row]
-        print("按下的是 \(name) 的 detail")
+        let demoItem = info[indexPath.section][indexPath.row]
+        print("按下的是 \(demoItem.name) 的 detail")
     }
 
     // 有幾組 section
