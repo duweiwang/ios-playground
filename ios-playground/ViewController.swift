@@ -47,10 +47,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
          DemoItem(name: "Text", vc: TextVC())
         ],
         [
-         DemoItem(name: "VStack", vc: ButtonVC()),
+         DemoItem(name: "VStack", vc: VStackDemo()),
          DemoItem(name: "HStack", vc: ButtonVC()),
          DemoItem(name: "ZStack", vc: ButtonVC()),
-         DemoItem(name: "Scroll", vc: ButtonVC())
+         DemoItem(name: "Scroll", vc: ButtonVC()),
+         DemoItem(name: "Text", vc: TextDemo()),
+         DemoItem(name: "Image", vc: ImageDemo())
         ]
     ]
     

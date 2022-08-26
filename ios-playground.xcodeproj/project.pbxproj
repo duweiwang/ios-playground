@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9476675828B908E400B56774 /* ImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675728B908E400B56774 /* ImageDemo.swift */; };
+		9476675A28B908FA00B56774 /* TextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675928B908FA00B56774 /* TextDemo.swift */; };
+		9476675C28B90E2A00B56774 /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675B28B90E2A00B56774 /* ProgressDemo.swift */; };
+		9476675E28B90E9900B56774 /* HStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675D28B90E9900B56774 /* HStackDemo.swift */; };
+		9476676028B90F2C00B56774 /* CountdownDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675F28B90F2C00B56774 /* CountdownDemo.swift */; };
+		9476676228B90F5900B56774 /* ZStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476676128B90F5900B56774 /* ZStackDemo.swift */; };
+		94767EED28B7645900B02512 /* SwiftWithUikitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94767EEC28B7645900B02512 /* SwiftWithUikitVC.swift */; };
+		94767EEF28B7683500B02512 /* VStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94767EEE28B7683500B02512 /* VStackDemo.swift */; };
 		94A5DEF928B4822900724506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5DEF828B4822900724506 /* AppDelegate.swift */; };
 		94A5DEFD28B4822900724506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5DEFC28B4822900724506 /* ViewController.swift */; };
 		94A5DF0228B4822B00724506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A5DF0128B4822B00724506 /* Assets.xcassets */; };
@@ -17,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9476675728B908E400B56774 /* ImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDemo.swift; sourceTree = "<group>"; };
+		9476675928B908FA00B56774 /* TextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemo.swift; sourceTree = "<group>"; };
+		9476675B28B90E2A00B56774 /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
+		9476675D28B90E9900B56774 /* HStackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackDemo.swift; sourceTree = "<group>"; };
+		9476675F28B90F2C00B56774 /* CountdownDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDemo.swift; sourceTree = "<group>"; };
+		9476676128B90F5900B56774 /* ZStackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackDemo.swift; sourceTree = "<group>"; };
+		94767EEC28B7645900B02512 /* SwiftWithUikitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWithUikitVC.swift; sourceTree = "<group>"; };
+		94767EEE28B7683500B02512 /* VStackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackDemo.swift; sourceTree = "<group>"; };
 		94A5DEF528B4822900724506 /* ios-playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A5DEF828B4822900724506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94A5DEFC28B4822900724506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +82,7 @@
 				94A5DF0128B4822B00724506 /* Assets.xcassets */,
 				94A5DF0328B4822B00724506 /* LaunchScreen.storyboard */,
 				94A5DF0628B4822B00724506 /* Info.plist */,
+				94767EEC28B7645900B02512 /* SwiftWithUikitVC.swift */,
 			);
 			path = "ios-playground";
 			sourceTree = "<group>";
@@ -90,6 +107,13 @@
 		94A5E03828B51BDA00724506 /* swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				94767EEE28B7683500B02512 /* VStackDemo.swift */,
+				9476675728B908E400B56774 /* ImageDemo.swift */,
+				9476675928B908FA00B56774 /* TextDemo.swift */,
+				9476675B28B90E2A00B56774 /* ProgressDemo.swift */,
+				9476675D28B90E9900B56774 /* HStackDemo.swift */,
+				9476675F28B90F2C00B56774 /* CountdownDemo.swift */,
+				9476676128B90F5900B56774 /* ZStackDemo.swift */,
 			);
 			path = swiftui;
 			sourceTree = "<group>";
@@ -164,11 +188,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9476676028B90F2C00B56774 /* CountdownDemo.swift in Sources */,
+				9476676228B90F5900B56774 /* ZStackDemo.swift in Sources */,
 				94A5E03628B516F600724506 /* DemoStructure.swift in Sources */,
+				9476675A28B908FA00B56774 /* TextDemo.swift in Sources */,
 				94A5E03328B5163100724506 /* ButtonVC.swift in Sources */,
+				9476675C28B90E2A00B56774 /* ProgressDemo.swift in Sources */,
+				9476675828B908E400B56774 /* ImageDemo.swift in Sources */,
 				94A5DEFD28B4822900724506 /* ViewController.swift in Sources */,
 				94A5DEF928B4822900724506 /* AppDelegate.swift in Sources */,
 				94A5E03A28B51BFF00724506 /* TextVC.swift in Sources */,
+				94767EED28B7645900B02512 /* SwiftWithUikitVC.swift in Sources */,
+				94767EEF28B7683500B02512 /* VStackDemo.swift in Sources */,
+				9476675E28B90E9900B56774 /* HStackDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
