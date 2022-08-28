@@ -3,6 +3,7 @@
 //  ios-playground
 //
 //  Created by 王杜伟 on 2022/8/23.
+// https://swiftwithmajid.com/2022/08/10/mastering-grid-layout-in-swiftui/
 //
 
 import UIKit
@@ -52,7 +53,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
          DemoItem(name: "ZStack", vc: ButtonVC()),
          DemoItem(name: "Scroll", vc: ButtonVC()),
          DemoItem(name: "Text", vc: TextDemo()),
-         DemoItem(name: "Image", vc: ImageDemo())
+         DemoItem(name: "Image", vc: ImageDemo()),
+         DemoItem(name: "Frame", vc: FrameDemo()),
+         DemoItem(name: "Gride", vc: GridDemo()),
+         DemoItem(name: "Alignment", vc: AlignmentDemo()),
+         DemoItem(name: "XX", vc: FrameDemo())
         ]
     ]
     

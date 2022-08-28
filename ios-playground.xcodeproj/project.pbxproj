@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940A897A28B92E14002BF205 /* FrameDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A897928B92E14002BF205 /* FrameDemo.swift */; };
+		940A8B8528B9CC9D002BF205 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 940A8B8428B9CC9D002BF205 /* MarkdownUI */; };
+		940A8D0028BA0384002BF205 /* RichText in Frameworks */ = {isa = PBXBuildFile; productRef = 940A8CFF28BA0384002BF205 /* RichText */; };
 		9476675828B908E400B56774 /* ImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675728B908E400B56774 /* ImageDemo.swift */; };
 		9476675A28B908FA00B56774 /* TextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675928B908FA00B56774 /* TextDemo.swift */; };
 		9476675C28B90E2A00B56774 /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675B28B90E2A00B56774 /* ProgressDemo.swift */; };
@@ -15,6 +18,9 @@
 		9476676228B90F5900B56774 /* ZStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476676128B90F5900B56774 /* ZStackDemo.swift */; };
 		94767EED28B7645900B02512 /* SwiftWithUikitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94767EEC28B7645900B02512 /* SwiftWithUikitVC.swift */; };
 		94767EEF28B7683500B02512 /* VStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94767EEE28B7683500B02512 /* VStackDemo.swift */; };
+		9490F97028BB11D7007104EB /* GridDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9490F96F28BB11D7007104EB /* GridDemo.swift */; };
+		9490F97228BB14A4007104EB /* ShapeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9490F97128BB14A4007104EB /* ShapeDemo.swift */; };
+		9490F97428BB536D007104EB /* AlignmentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9490F97328BB536D007104EB /* AlignmentDemo.swift */; };
 		94A5DEF928B4822900724506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5DEF828B4822900724506 /* AppDelegate.swift */; };
 		94A5DEFD28B4822900724506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5DEFC28B4822900724506 /* ViewController.swift */; };
 		94A5DF0228B4822B00724506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A5DF0128B4822B00724506 /* Assets.xcassets */; };
@@ -25,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		940A897928B92E14002BF205 /* FrameDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameDemo.swift; sourceTree = "<group>"; };
 		9476675728B908E400B56774 /* ImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDemo.swift; sourceTree = "<group>"; };
 		9476675928B908FA00B56774 /* TextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemo.swift; sourceTree = "<group>"; };
 		9476675B28B90E2A00B56774 /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
@@ -33,6 +40,9 @@
 		9476676128B90F5900B56774 /* ZStackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackDemo.swift; sourceTree = "<group>"; };
 		94767EEC28B7645900B02512 /* SwiftWithUikitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWithUikitVC.swift; sourceTree = "<group>"; };
 		94767EEE28B7683500B02512 /* VStackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackDemo.swift; sourceTree = "<group>"; };
+		9490F96F28BB11D7007104EB /* GridDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDemo.swift; sourceTree = "<group>"; };
+		9490F97128BB14A4007104EB /* ShapeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDemo.swift; sourceTree = "<group>"; };
+		9490F97328BB536D007104EB /* AlignmentDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentDemo.swift; sourceTree = "<group>"; };
 		94A5DEF528B4822900724506 /* ios-playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A5DEF828B4822900724506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94A5DEFC28B4822900724506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940A8B8528B9CC9D002BF205 /* MarkdownUI in Frameworks */,
+				940A8D0028BA0384002BF205 /* RichText in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +126,10 @@
 				9476675D28B90E9900B56774 /* HStackDemo.swift */,
 				9476675F28B90F2C00B56774 /* CountdownDemo.swift */,
 				9476676128B90F5900B56774 /* ZStackDemo.swift */,
+				940A897928B92E14002BF205 /* FrameDemo.swift */,
+				9490F96F28BB11D7007104EB /* GridDemo.swift */,
+				9490F97128BB14A4007104EB /* ShapeDemo.swift */,
+				9490F97328BB536D007104EB /* AlignmentDemo.swift */,
 			);
 			path = swiftui;
 			sourceTree = "<group>";
@@ -134,6 +150,10 @@
 			dependencies = (
 			);
 			name = "ios-playground";
+			packageProductDependencies = (
+				940A8B8428B9CC9D002BF205 /* MarkdownUI */,
+				940A8CFF28BA0384002BF205 /* RichText */,
+			);
 			productName = "ios-playground";
 			productReference = 94A5DEF528B4822900724506 /* ios-playground.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +182,10 @@
 				Base,
 			);
 			mainGroup = 94A5DEEC28B4822900724506;
+			packageReferences = (
+				940A8B8328B9CC9D002BF205 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+				940A8CFE28BA0384002BF205 /* XCRemoteSwiftPackageReference "RichText" */,
+			);
 			productRefGroup = 94A5DEF628B4822900724506 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,10 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9490F97228BB14A4007104EB /* ShapeDemo.swift in Sources */,
 				9476676028B90F2C00B56774 /* CountdownDemo.swift in Sources */,
 				9476676228B90F5900B56774 /* ZStackDemo.swift in Sources */,
+				940A897A28B92E14002BF205 /* FrameDemo.swift in Sources */,
 				94A5E03628B516F600724506 /* DemoStructure.swift in Sources */,
 				9476675A28B908FA00B56774 /* TextDemo.swift in Sources */,
+				9490F97428BB536D007104EB /* AlignmentDemo.swift in Sources */,
+				9490F97028BB11D7007104EB /* GridDemo.swift in Sources */,
 				94A5E03328B5163100724506 /* ButtonVC.swift in Sources */,
 				9476675C28B90E2A00B56774 /* ProgressDemo.swift in Sources */,
 				9476675828B908E400B56774 /* ImageDemo.swift in Sources */,
@@ -408,6 +436,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		940A8B8328B9CC9D002BF205 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		940A8CFE28BA0384002BF205 /* XCRemoteSwiftPackageReference "RichText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NuPlay/RichText.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		940A8B8428B9CC9D002BF205 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 940A8B8328B9CC9D002BF205 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+		940A8CFF28BA0384002BF205 /* RichText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 940A8CFE28BA0384002BF205 /* XCRemoteSwiftPackageReference "RichText" */;
+			productName = RichText;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94A5DEED28B4822900724506 /* Project object */;
 }
