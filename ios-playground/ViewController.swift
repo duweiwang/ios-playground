@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
          DemoItem(name: "Frame", vc: FrameDemo()),
          DemoItem(name: "Gride", vc: GridDemo()),
          DemoItem(name: "Alignment", vc: AlignmentDemo()),
-         DemoItem(name: "XX", vc: FrameDemo())
+         DemoItem(name: "List", vc: ListDemo())
         ]
     ]
     
