@@ -8,54 +8,51 @@
 import SwiftUI
 import UIKit
 
-class CountdownDemo:SwiftWithUikitVC<CountdownView>{
-    
-    override var body: CountdownView{
+class CountdownDemo: SwiftWithUikitVC<CountdownView> {
+    override var body: CountdownView {
         CountdownView()
     }
 }
 
-
 struct CountdownView: View {
-    
-    @State var totalCountdown: CGFloat  = 30
+    @State var totalCountdown: CGFloat = 30
     @State var counter: Int = 10
     @State var isStart = false
-    
+
     @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+
     var body: some View {
         VStack {
             Spacer()
             ZStack {
-        progressTrackView()
-        progressBarView()
-        progressTimeView()
-    }
+                progressTrackView()
+                progressBarView()
+                progressTimeView()
+            }
             Spacer()
             btnView()
-        }.onReceive(timer) { time in
+        }.onReceive(timer) { _ in
             self.startCounting()
         }
     }
-    
+
     func progressTrackView() -> some View {
         Circle()
             .fill(Color.clear)
             .frame(width: 250, height: 250)
             .overlay(Circle().stroke(Color.black.opacity(0.09), lineWidth: 15))
     }
-    
+
     // 获得开始进度
     func startProgress() -> CGFloat {
         return (CGFloat(counter) / CGFloat(totalCountdown))
     }
-    
+
     // 获得结束进度
     func completed() -> Bool {
         return startProgress() == 1
     }
-    
+
     // 进度圆环
     func progressBarView() -> some View {
         Circle()
@@ -69,11 +66,11 @@ struct CountdownView: View {
                     .foregroundColor(
                         withAnimation(.easeInOut(duration: 0.2)) {
                             completed() ? Color.green : Color.orange
-    }
+                        }
                     )
             )
     }
-    
+
     // 获得格式化时间
     func counterToMinutes() -> String {
         let currentTime = Int(totalCountdown) - counter
@@ -81,15 +78,14 @@ struct CountdownView: View {
         let minutes = Int(currentTime / 60)
         return "\(minutes):\(seconds < 10 ? "0" : "")\(seconds)"
     }
-    
+
     // 进度时间
-    func progressTimeView()-> some View {
+    func progressTimeView() -> some View {
         Text(counterToMinutes())
             .font(.system(size: 48))
             .fontWeight(.black)
     }
 
-    
     // 操作按钮
     func btnView() -> some View {
         HStack(spacing: 55) {
@@ -101,8 +97,8 @@ struct CountdownView: View {
                 .background(self.isStart ? .red : .green)
                 .clipShape(Capsule())
                 .onTapGesture {
-        self.isStart.toggle()
-    }
+                    self.isStart.toggle()
+                }
 
             // 重置按钮
             Image(systemName: "arrow.clockwise")
@@ -114,22 +110,21 @@ struct CountdownView: View {
                 .onTapGesture {
                     self.counter = 0
                     withAnimation(.default) {
-        self.totalCountdown = 30
-    }
+                        self.totalCountdown = 30
+                    }
                 }
         }.padding(.bottom, 55)
     }
-    
-    
+
     // 开始计时
     func startCounting() {
-        if self.isStart {
-            if (self.counter < Int(self.totalCountdown)) {
-                self.counter += 1
-            }else {
-                self.isStart.toggle()
+        if isStart {
+            if counter < Int(totalCountdown) {
+                counter += 1
+            } else {
+                isStart.toggle()
             }
-    }
+        }
     }
 }
 
@@ -138,4 +133,3 @@ struct CountdownView_Previews: PreviewProvider {
         CountdownView()
     }
 }
-

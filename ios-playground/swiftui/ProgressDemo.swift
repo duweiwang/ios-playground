@@ -8,15 +8,15 @@
 import SwiftUI
 import UIKit
 
-class ProgressDemo:SwiftWithUikitVC<MyProgressView>{
-    override var body: MyProgressView{
+class ProgressDemo: SwiftWithUikitVC<MyProgressView> {
+    override var body: MyProgressView {
         MyProgressView()
     }
 }
 
 struct MyProgressView: View {
     var body: some View {
-        VStack{
+        VStack {
             simpleProgress()
             progressWithText()
             lineProgressView()
@@ -26,27 +26,26 @@ struct MyProgressView: View {
             myStyle2()
         }
     }
-    
-    
-    func simpleProgress() -> some View{
+
+    func simpleProgress() -> some View {
         ProgressView()
     }
-    
-    func progressWithText() -> some View{
+
+    func progressWithText() -> some View {
         ProgressView("loading..")
     }
-    
-    func lineProgressView() ->some View{
-        ProgressView(value: 250,total: 1000)
+
+    func lineProgressView() -> some View {
+        ProgressView(value: 250, total: 1000)
     }
-    
-    func styleProgressView()->some View{
+
+    func styleProgressView() -> some View {
         ProgressView("Please wait...")
             .progressViewStyle(CircularProgressViewStyle(tint: .purple))
             .foregroundColor(.green)
     }
-    
-    func btnProgressView()->some View{
+
+    func btnProgressView() -> some View {
         ProgressView {
             Button(action: {
                 // Do something to stop the task.
@@ -59,18 +58,16 @@ struct MyProgressView: View {
             .cornerRadius(5)
         }
     }
-    
-    func myStyle() -> some View{
+
+    func myStyle() -> some View {
         ProgressView("Loading...", value: 25, total: 100)
             .progressViewStyle(RoundedRectProgressViewStyle())
     }
-    
-    func myStyle2()->some View{
+
+    func myStyle2() -> some View {
         ProgressView("Loading...", value: 50, total: 100)
             .progressViewStyle(CustomCircularProgressViewStyle())
     }
-    
-    
 }
 
 struct RoundedRectProgressViewStyle: ProgressViewStyle {
@@ -80,7 +77,7 @@ struct RoundedRectProgressViewStyle: ProgressViewStyle {
                 .frame(width: 250, height: 28)
                 .foregroundColor(.blue)
                 .overlay(Color.black.opacity(0.5)).cornerRadius(14)
-            
+
             RoundedRectangle(cornerRadius: 14)
                 .frame(width: CGFloat(configuration.fractionCompleted ?? 0) * 250, height: 28)
                 .foregroundColor(.yellow)
@@ -97,11 +94,11 @@ struct CustomCircularProgressViewStyle: ProgressViewStyle {
                 .stroke(Color.blue, style: StrokeStyle(lineWidth: 3, dash: [10, 5]))
                 .rotationEffect(.degrees(-90))
                 .frame(width: 200)
-            
+
             if let fractionCompleted = configuration.fractionCompleted {
                 Text(fractionCompleted < 1 ?
-                        "Completed \(Int((configuration.fractionCompleted ?? 0) * 100))%"
-                        : "Done!"
+                    "Completed \(Int((configuration.fractionCompleted ?? 0) * 100))%"
+                    : "Done!"
                 )
                 .fontWeight(.bold)
                 .foregroundColor(fractionCompleted < 1 ? .orange : .green)

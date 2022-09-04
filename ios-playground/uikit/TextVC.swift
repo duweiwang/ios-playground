@@ -7,17 +7,12 @@
 
 import UIKit
 
-
-class TextVC :UIViewController {
-    
+class TextVC: UIViewController {
     override func viewDidLoad() {
         setUpTitle()
     }
-    
-    
-    func setUpTitle(){
-        self.title = "Text"
-       
+
+    func setUpTitle() {
+        title = "Text"
     }
-    
 }

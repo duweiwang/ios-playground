@@ -8,15 +8,12 @@
 import Foundation
 import UIKit
 
-
-struct DemoItem{
-    
+struct DemoItem {
     let name: String
     let vc: UIViewController
-    
+
     init(name: String, vc: UIViewController) {
         self.name = name
         self.vc = vc
     }
-    
 }

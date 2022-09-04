@@ -7,16 +7,12 @@
 
 import UIKit
 
-class ButtonVC : UIViewController{
-    
+class ButtonVC: UIViewController {
     override func viewDidLoad() {
         setUpTitle()
     }
-    
-    
-    func setUpTitle(){
-        self.title = "Button"
-       
+
+    func setUpTitle() {
+        title = "Button"
     }
-    
 }

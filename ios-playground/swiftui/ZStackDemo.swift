@@ -8,9 +8,8 @@
 import SwiftUI
 import UIKit
 
-class ZStackDemo :SwiftWithUikitVC<ZStackView>{
-    
-    override var body: ZStackView{
+class ZStackDemo: SwiftWithUikitVC<ZStackView> {
+    override var body: ZStackView {
         ZStackView()
     }
 }
@@ -18,10 +17,9 @@ class ZStackDemo :SwiftWithUikitVC<ZStackView>{
 struct ZStackView: View {
     var body: some View {
         VStack {
-            
             // 重叠向布局
             // alignment: 布局对齐格式, 默认为 .center
-            ZStack.init(alignment: .topLeading) {
+            ZStack(alignment: .topLeading) {
                 Text("Hello, World!我对齐头部")
                 Text("阿哈哈哈哈\nasdhasd\nasdj")
             }
@@ -29,7 +27,7 @@ struct ZStackView: View {
             .background(Color.orange)
             .cornerRadius(20)
             .shadow(radius: 10)
-            
+
             ZStack {
                 Text("Hello, World!我对齐中间")
                 Text("阿哈哈哈哈\nasdhasd")
@@ -39,7 +37,7 @@ struct ZStackView: View {
             .cornerRadius(20)
             .shadow(radius: 10)
             .padding(.top, 10)
-            
+
             ZStack {
                 Rectangle()
                     .background(.ultraThinMaterial)
@@ -51,9 +49,7 @@ struct ZStackView: View {
             }
             .shadow(radius: 20)
             .padding(.top, 10)
-            
         }
-        
     }
 }
 

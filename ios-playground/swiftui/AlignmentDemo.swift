@@ -8,61 +8,53 @@
 import SwiftUI
 import UIKit
 
-
-class AlignmentDemo : SwiftWithUikitVC<AlignmentView>{
-    
+class AlignmentDemo: SwiftWithUikitVC<AlignmentView> {
     override var body: AlignmentView {
         AlignmentView()
     }
-    
 }
 
-
-struct AlignmentView: View{
+struct AlignmentView: View {
     @State var position: Int = 0
-    
+
     var body: some View {
-        
         VStack {
             Spacer()
-                        
+
             ZStack {
                 Hello()
                     .background(RoundedRectangle(cornerRadius: 8).fill(Color.green).opacity(0.5))
                     .alignmentGuide(HorizontalAlignment.center, computeValue: { d in self.helloH(d) })
                     .alignmentGuide(VerticalAlignment.center, computeValue: { d in self.helloV(d) })
-                
+
                 World()
                     .background(RoundedRectangle(cornerRadius: 8).fill(Color.yellow).opacity(0.5))
                     .alignmentGuide(HorizontalAlignment.center, computeValue: { d in self.worldH(d) })
                     .alignmentGuide(VerticalAlignment.center, computeValue: { d in self.worldV(d) })
-                
             }
 
             Spacer()
-            
+
             HStack {
                 Button(action: { withAnimation(.easeInOut(duration: 1.0)) { self.position = 0 } }, label: {
                     Rectangle().frame(width: 50, height: 50).overlay(Text("H W").foregroundColor(.black))
                 })
-                
+
                 Button(action: { withAnimation(.easeInOut(duration: 1.0)) { self.position = 1 } }, label: {
                     Rectangle().frame(width: 50, height: 50).overlay(Text("H\nW").foregroundColor(.black))
                 })
-                
+
                 Button(action: { withAnimation(.easeInOut(duration: 1.0)) { self.position = 2 } }, label: {
                     Rectangle().frame(width: 50, height: 50).overlay(Text("W H").foregroundColor(.black))
                 })
-                
+
                 Button(action: { withAnimation(.easeInOut(duration: 1.0)) { self.position = 3 } }, label: {
                     Rectangle().frame(width: 50, height: 50).overlay(Text("W\nH").foregroundColor(.black))
                 })
             }
-            
         }
-    
     }
-    
+
     func helloH(_ d: ViewDimensions) -> CGFloat {
         if position == 0 {
             return 0
@@ -74,7 +66,7 @@ struct AlignmentView: View{
             return 0
         }
     }
-    
+
     func helloV(_ d: ViewDimensions) -> CGFloat {
         if position == 0 {
             return 0
@@ -98,7 +90,7 @@ struct AlignmentView: View{
             return 0
         }
     }
-    
+
     func worldV(_ d: ViewDimensions) -> CGFloat {
         if position == 0 {
             return 0
@@ -110,7 +102,6 @@ struct AlignmentView: View{
             return d[.bottom] + 10
         }
     }
-
 }
 
 struct Hello: View {
@@ -124,4 +115,3 @@ struct World: View {
         Group { Text("Hello").foregroundColor(.clear) + Text(" World").foregroundColor(.black) }.padding(20)
     }
 }
-

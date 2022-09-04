@@ -10,36 +10,33 @@
 import SwiftUI
 import UIKit
 
-class FrameDemo:SwiftWithUikitVC<FrameView>{
-    
-    override var body: FrameView{
+class FrameDemo: SwiftWithUikitVC<FrameView> {
+    override var body: FrameView {
         FrameView()
     }
-    
 }
 
-struct FrameView:View{
-    var body: some View{
-        VStack{
+struct FrameView: View {
+    var body: some View {
+        VStack {
             ExampleView()
-            
+
             ExampleView2()
         }
     }
 }
 
-
 struct ExampleView: View {
     @State private var width: CGFloat = 50
-    
+
     var body: some View {
         VStack {
             SubView()
                 .frame(width: self.width, height: 120)
                 .border(Color.blue, width: 2)
-            
+
             Text("Offered Width \(Int(width))")
-            Slider(value: $width, in: 0...200, step: 1)
+            Slider(value: $width, in: 0 ... 200, step: 1)
         }
     }
 }
@@ -47,13 +44,13 @@ struct ExampleView: View {
 struct ExampleView2: View {
     @State private var width: CGFloat = 150
     @State private var fixedSize: Bool = true
-    
+
     var body: some View {
         GeometryReader { proxy in
-            
+
             VStack {
                 Spacer()
-                
+
                 VStack {
                     LittleSquares(total: 7)
                         .border(Color.green)
@@ -62,11 +59,11 @@ struct ExampleView2: View {
                 .frame(width: self.width)
                 .border(Color.primary)
                 .background(MyGradient())
-                
+
                 Spacer()
-                
+
                 Form {
-                    Slider(value: self.$width, in: 0...proxy.size.width)
+                    Slider(value: self.$width, in: 0 ... proxy.size.width)
                     Toggle(isOn: self.$fixedSize) { Text("Fixed Width") }
                 }
             }
@@ -74,15 +71,14 @@ struct ExampleView2: View {
     }
 }
 
-
 struct LittleSquares: View {
     let sqSize: CGFloat = 20
     let total: Int
-    
+
     var body: some View {
         GeometryReader { proxy in
             HStack(spacing: 5) {
-                ForEach(0..<self.maxSquares(proxy), id: \.self) { _ in
+                ForEach(0 ..< self.maxSquares(proxy), id: \.self) { _ in
                     RoundedRectangle(cornerRadius: 5).frame(width: self.sqSize, height: self.sqSize)
                         .foregroundColor(self.allFit(proxy) ? .green : .red)
                 }
@@ -93,7 +89,7 @@ struct LittleSquares: View {
     func maxSquares(_ proxy: GeometryProxy) -> Int {
         return min(Int(proxy.size.width / (sqSize + 5)), total)
     }
-    
+
     func allFit(_ proxy: GeometryProxy) -> Bool {
         return maxSquares(proxy) == total
     }
