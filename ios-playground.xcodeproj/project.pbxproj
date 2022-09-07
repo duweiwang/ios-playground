@@ -10,6 +10,7 @@
 		940A897A28B92E14002BF205 /* FrameDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A897928B92E14002BF205 /* FrameDemo.swift */; };
 		940A8B8528B9CC9D002BF205 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 940A8B8428B9CC9D002BF205 /* MarkdownUI */; };
 		940A8D0028BA0384002BF205 /* RichText in Frameworks */ = {isa = PBXBuildFile; productRef = 940A8CFF28BA0384002BF205 /* RichText */; };
+		9465162328C8D81D00FA3E37 /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465162228C8D81D00FA3E37 /* NavigationDemo.swift */; };
 		9465343728C38E9C0084E3E2 /* TextFieldDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465343628C38E9C0084E3E2 /* TextFieldDemo.swift */; };
 		9476675828B908E400B56774 /* ImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675728B908E400B56774 /* ImageDemo.swift */; };
 		9476675A28B908FA00B56774 /* TextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476675928B908FA00B56774 /* TextDemo.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		940A897928B92E14002BF205 /* FrameDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameDemo.swift; sourceTree = "<group>"; };
+		9465162228C8D81D00FA3E37 /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		9465343628C38E9C0084E3E2 /* TextFieldDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo.swift; sourceTree = "<group>"; };
 		9476675728B908E400B56774 /* ImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDemo.swift; sourceTree = "<group>"; };
 		9476675928B908FA00B56774 /* TextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemo.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				9490F97328BB536D007104EB /* AlignmentDemo.swift */,
 				949011B728C33931007104EB /* ListDemo.swift */,
 				9465343628C38E9C0084E3E2 /* TextFieldDemo.swift */,
+				9465162228C8D81D00FA3E37 /* NavigationDemo.swift */,
 			);
 			path = swiftui;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				94A5E03A28B51BFF00724506 /* TextVC.swift in Sources */,
 				94767EED28B7645900B02512 /* SwiftWithUikitVC.swift in Sources */,
 				9490FFA628BE3815007104EB /* UserDefaultsDemo.swift in Sources */,
+				9465162328C8D81D00FA3E37 /* NavigationDemo.swift in Sources */,
 				94767EEF28B7683500B02512 /* VStackDemo.swift in Sources */,
 				9490124928C351EF007104EB /* ErrorHandle.swift in Sources */,
 				9476675E28B90E9900B56774 /* HStackDemo.swift in Sources */,

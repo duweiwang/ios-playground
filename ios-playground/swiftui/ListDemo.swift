@@ -40,6 +40,27 @@ struct ListView: View {
         Item(name: "Roblox", scheme: "roblox://"), /// 验证通过
         Item(name: "Subway Surfers", scheme: "SubwaySurfers://"), /// 验证通过
         Item(name: "Candy Crush", scheme: "CandyCrushSaga://"), /// 验证通过
+        ///
+        Item(name: "Books", scheme: "ibooks://"),///验证通过
+      
+      
+        Item(name: "TV", scheme: "videos://"),///验证通过
+        Item(name: "Mail", scheme: "message://"),///验证通过
+        Item(name: "Maps", scheme: "maps://"),/// 验证通过
+        Item(name: "Messages", scheme: "messages://"),///验证通过
+        Item(name: "Music", scheme: "music://"),///验证通过
+        Item(name: "Photos", scheme: "photos-redirect://"),/// 验证通过
+        ///
+        Item(name: "Podcasts", scheme: "podcast://"),/// 验证通过
+        Item(name: "Safari", scheme: "x-web-search://"),/// 验证通过
+        Item(name: "Notes", scheme: "mobilenotes://"),///验证通过
+        Item(name: "Wallet", scheme: "wallet://"),//shoebox://    /// 验证通过
+        
+        Item(name: "Calculator", scheme: "calc://"),///
+        Item(name: "Compass", scheme: "prefs:root=COMPASS"),
+        Item(name: "Phone", scheme: "telprompt://"),
+        Item(name: "Translate", scheme: "itranslate://"),
+        Item(name: "Magnifier", scheme: "CandyCrushSaga://"),
     ]
 
     var body: some View {
