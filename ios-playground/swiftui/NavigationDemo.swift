@@ -10,13 +10,13 @@
 
 import SwiftUI
 
-class NavigationDemo: SwiftWithUikitVC<NavigationView> {
-    override var body: NavigationView {
-        NavigationView()
+class NavigationDemo: SwiftWithUikitVC<MyNavigationView> {
+    override var body: MyNavigationView {
+        MyNavigationView()
     }
 }
 
-struct NavigationView: View {
+struct MyNavigationView: View {
     var body: some View {
         VStack {
             NavigationLink(destination: Animation1()) {
@@ -292,6 +292,6 @@ struct ModalView: View {
 
 struct NavigationDemo_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView()
+        MyNavigationView()
     }
 }
