@@ -53,14 +53,20 @@ struct ListView: View {
         ///
         Item(name: "Podcasts", scheme: "podcast://"),/// 验证通过
         Item(name: "Safari", scheme: "x-web-search://"),/// 验证通过
-        Item(name: "Notes", scheme: "mobilenotes://"),///验证通过
+        Item(name: "备忘录", scheme: "mobilenotes://"),///验证通过
         Item(name: "Wallet", scheme: "wallet://"),//shoebox://    /// 验证通过
         
-        Item(name: "Calculator", scheme: "calc://"),///
+        Item(name: "Calculator", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=calc://"),///
         Item(name: "Compass", scheme: "prefs:root=COMPASS"),
         Item(name: "Phone", scheme: "telprompt://"),
+        Item(name: "Phone-2", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=mobilephone://"),
         Item(name: "Translate", scheme: "itranslate://"),
         Item(name: "Magnifier", scheme: "CandyCrushSaga://"),
+        Item(name: "Contact", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=contact://"),
+        Item(name: "日历", scheme: "calsjow://"),
+        Item(name: "设置", scheme: "com.apple.preferences://"),
+        Item(name: "相机", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=camera://"),
+        Item(name: "天气", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=weather://"),
     ]
 
     var body: some View {
