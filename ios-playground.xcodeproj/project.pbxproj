@@ -10,6 +10,24 @@
 		940A897A28B92E14002BF205 /* FrameDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A897928B92E14002BF205 /* FrameDemo.swift */; };
 		940A8B8528B9CC9D002BF205 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 940A8B8428B9CC9D002BF205 /* MarkdownUI */; };
 		940A8D0028BA0384002BF205 /* RichText in Frameworks */ = {isa = PBXBuildFile; productRef = 940A8CFF28BA0384002BF205 /* RichText */; };
+		943A4D9828D4B912007C925C /* WordSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9228D4B911007C925C /* WordSearchView.swift */; };
+		943A4D9928D4B912007C925C /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9328D4B911007C925C /* DefinitionView.swift */; };
+		943A4D9A28D4B912007C925C /* WordDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9428D4B912007C925C /* WordDetailsView.swift */; };
+		943A4D9B28D4B912007C925C /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9528D4B912007C925C /* LibraryView.swift */; };
+		943A4D9C28D4B912007C925C /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9628D4B912007C925C /* AddWordView.swift */; };
+		943A4D9D28D4B912007C925C /* WordDetailsViewNoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9728D4B912007C925C /* WordDetailsViewNoViewModel.swift */; };
+		943A4D9F28D4B921007C925C /* WordsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9E28D4B921007C925C /* WordsAPI.swift */; };
+		943A4DA128D4B94C007C925C /* WordBrowserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DA028D4B94C007C925C /* WordBrowserScreen.swift */; };
+		943A4DAC28D4BF8E007C925C /* BookSearchNoCancellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DA528D4BF8E007C925C /* BookSearchNoCancellationView.swift */; };
+		943A4DAD28D4BF8E007C925C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DA628D4BF8E007C925C /* MenuView.swift */; };
+		943A4DAE28D4BF8E007C925C /* BookSearchTaskCancellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DA728D4BF8E007C925C /* BookSearchTaskCancellationView.swift */; };
+		943A4DAF28D4BF8E007C925C /* CooperativeTaskCancellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DA828D4BF8E007C925C /* CooperativeTaskCancellationView.swift */; };
+		943A4DB028D4BF8E007C925C /* BookSearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DA928D4BF8E007C925C /* BookSearchRowView.swift */; };
+		943A4DB128D4BF8E007C925C /* BookSearchActorTaskCancellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DAA28D4BF8E007C925C /* BookSearchActorTaskCancellationView.swift */; };
+		943A4DB228D4BF8E007C925C /* BookSearchNoCancellationLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DAB28D4BF8E007C925C /* BookSearchNoCancellationLiveView.swift */; };
+		943A4DB528D4BF9B007C925C /* OpenLibrarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DB328D4BF9B007C925C /* OpenLibrarySearch.swift */; };
+		943A4DB628D4BF9B007C925C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DB428D4BF9B007C925C /* Book.swift */; };
+		943A4DB828D4BFBB007C925C /* TaskCancellationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4DB728D4BFBB007C925C /* TaskCancellationScreen.swift */; };
 		9465162328C8D81D00FA3E37 /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465162228C8D81D00FA3E37 /* NavigationDemo.swift */; };
 		9465162528C8E62000FA3E37 /* DragDropDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465162428C8E62000FA3E37 /* DragDropDemo.swift */; };
 		9465343728C38E9C0084E3E2 /* TextFieldDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465343628C38E9C0084E3E2 /* TextFieldDemo.swift */; };
@@ -29,6 +47,9 @@
 		9490F97228BB14A4007104EB /* ShapeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9490F97128BB14A4007104EB /* ShapeDemo.swift */; };
 		9490F97428BB536D007104EB /* AlignmentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9490F97328BB536D007104EB /* AlignmentDemo.swift */; };
 		9490FFA628BE3815007104EB /* UserDefaultsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9490FFA528BE3815007104EB /* UserDefaultsDemo.swift */; };
+		94961B2828D0D47800B806B8 /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94961B2728D0D47800B806B8 /* ControlFlow.swift */; };
+		94961B2A28D0D51E00B806B8 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94961B2928D0D51E00B806B8 /* Enumerations.swift */; };
+		94961B2C28D0D5B600B806B8 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94961B2B28D0D5B600B806B8 /* Concurrency.swift */; };
 		94A5DEF928B4822900724506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5DEF828B4822900724506 /* AppDelegate.swift */; };
 		94A5DEFD28B4822900724506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5DEFC28B4822900724506 /* ViewController.swift */; };
 		94A5DF0228B4822B00724506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A5DF0128B4822B00724506 /* Assets.xcassets */; };
@@ -36,11 +57,30 @@
 		94A5E03328B5163100724506 /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5E03228B5163100724506 /* ButtonVC.swift */; };
 		94A5E03628B516F600724506 /* DemoStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5E03528B516F600724506 /* DemoStructure.swift */; };
 		94A5E03A28B51BFF00724506 /* TextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5E03928B51BFF00724506 /* TextVC.swift */; };
+		94C64A6E28DA1A5F005774AD /* AutoLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C64A6D28DA1A5F005774AD /* AutoLayoutVC.swift */; };
 		94D12CB428CAE9EC00517BE7 /* ToolbarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D12CB328CAE9EC00517BE7 /* ToolbarDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		940A897928B92E14002BF205 /* FrameDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameDemo.swift; sourceTree = "<group>"; };
+		943A4D9228D4B911007C925C /* WordSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordSearchView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/WordSearchView.swift"; sourceTree = "<group>"; };
+		943A4D9328D4B911007C925C /* DefinitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefinitionView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/DefinitionView.swift"; sourceTree = "<group>"; };
+		943A4D9428D4B912007C925C /* WordDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordDetailsView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/WordDetailsView.swift"; sourceTree = "<group>"; };
+		943A4D9528D4B912007C925C /* LibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibraryView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/LibraryView.swift"; sourceTree = "<group>"; };
+		943A4D9628D4B912007C925C /* AddWordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddWordView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/AddWordView.swift"; sourceTree = "<group>"; };
+		943A4D9728D4B912007C925C /* WordDetailsViewNoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordDetailsViewNoViewModel.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/WordDetailsViewNoViewModel.swift"; sourceTree = "<group>"; };
+		943A4D9E28D4B921007C925C /* WordsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordsAPI.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Model/WordsAPI.swift"; sourceTree = "<group>"; };
+		943A4DA028D4B94C007C925C /* WordBrowserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBrowserScreen.swift; sourceTree = "<group>"; };
+		943A4DA528D4BF8E007C925C /* BookSearchNoCancellationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookSearchNoCancellationView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Views/BookSearchNoCancellationView.swift"; sourceTree = "<group>"; };
+		943A4DA628D4BF8E007C925C /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Views/MenuView.swift"; sourceTree = "<group>"; };
+		943A4DA728D4BF8E007C925C /* BookSearchTaskCancellationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookSearchTaskCancellationView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Views/BookSearchTaskCancellationView.swift"; sourceTree = "<group>"; };
+		943A4DA828D4BF8E007C925C /* CooperativeTaskCancellationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CooperativeTaskCancellationView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Views/CooperativeTaskCancellationView.swift"; sourceTree = "<group>"; };
+		943A4DA928D4BF8E007C925C /* BookSearchRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookSearchRowView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Views/BookSearchRowView.swift"; sourceTree = "<group>"; };
+		943A4DAA28D4BF8E007C925C /* BookSearchActorTaskCancellationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookSearchActorTaskCancellationView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Views/BookSearchActorTaskCancellationView.swift"; sourceTree = "<group>"; };
+		943A4DAB28D4BF8E007C925C /* BookSearchNoCancellationLiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookSearchNoCancellationLiveView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Views/BookSearchNoCancellationLiveView.swift"; sourceTree = "<group>"; };
+		943A4DB328D4BF9B007C925C /* OpenLibrarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenLibrarySearch.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Model/OpenLibrarySearch.swift"; sourceTree = "<group>"; };
+		943A4DB428D4BF9B007C925C /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/TaskCancellation/TaskCancellation/Model/Book.swift"; sourceTree = "<group>"; };
+		943A4DB728D4BFBB007C925C /* TaskCancellationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCancellationScreen.swift; sourceTree = "<group>"; };
 		9465162228C8D81D00FA3E37 /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		9465162428C8E62000FA3E37 /* DragDropDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropDemo.swift; sourceTree = "<group>"; };
 		9465343628C38E9C0084E3E2 /* TextFieldDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDemo.swift; sourceTree = "<group>"; };
@@ -60,6 +100,9 @@
 		9490F97128BB14A4007104EB /* ShapeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDemo.swift; sourceTree = "<group>"; };
 		9490F97328BB536D007104EB /* AlignmentDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentDemo.swift; sourceTree = "<group>"; };
 		9490FFA528BE3815007104EB /* UserDefaultsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDemo.swift; sourceTree = "<group>"; };
+		94961B2728D0D47800B806B8 /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
+		94961B2928D0D51E00B806B8 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		94961B2B28D0D5B600B806B8 /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
 		94A5DEF528B4822900724506 /* ios-playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A5DEF828B4822900724506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94A5DEFC28B4822900724506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +112,7 @@
 		94A5E03228B5163100724506 /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
 		94A5E03528B516F600724506 /* DemoStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStructure.swift; sourceTree = "<group>"; };
 		94A5E03928B51BFF00724506 /* TextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextVC.swift; sourceTree = "<group>"; };
+		94C64A6D28DA1A5F005774AD /* AutoLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutVC.swift; sourceTree = "<group>"; };
 		94D12CB328CAE9EC00517BE7 /* ToolbarDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,12 +129,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		943A4D8E28D4B8B3007C925C /* swiftui-module */ = {
+			isa = PBXGroup;
+			children = (
+				943A4DA228D4BF46007C925C /* task_cancellation */,
+				943A4D8F28D4B8C4007C925C /* wordbrowser */,
+			);
+			path = "swiftui-module";
+			sourceTree = "<group>";
+		};
+		943A4D8F28D4B8C4007C925C /* wordbrowser */ = {
+			isa = PBXGroup;
+			children = (
+				943A4D9128D4B8E8007C925C /* view */,
+				943A4D9028D4B8E2007C925C /* model */,
+				943A4DA028D4B94C007C925C /* WordBrowserScreen.swift */,
+			);
+			path = wordbrowser;
+			sourceTree = "<group>";
+		};
+		943A4D9028D4B8E2007C925C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				943A4D9E28D4B921007C925C /* WordsAPI.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		943A4D9128D4B8E8007C925C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				943A4D9628D4B912007C925C /* AddWordView.swift */,
+				943A4D9328D4B911007C925C /* DefinitionView.swift */,
+				943A4D9528D4B912007C925C /* LibraryView.swift */,
+				943A4D9428D4B912007C925C /* WordDetailsView.swift */,
+				943A4D9728D4B912007C925C /* WordDetailsViewNoViewModel.swift */,
+				943A4D9228D4B911007C925C /* WordSearchView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		943A4DA228D4BF46007C925C /* task_cancellation */ = {
+			isa = PBXGroup;
+			children = (
+				943A4DA428D4BF79007C925C /* model */,
+				943A4DA328D4BF72007C925C /* view */,
+				943A4DB728D4BFBB007C925C /* TaskCancellationScreen.swift */,
+			);
+			path = task_cancellation;
+			sourceTree = "<group>";
+		};
+		943A4DA328D4BF72007C925C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				943A4DAA28D4BF8E007C925C /* BookSearchActorTaskCancellationView.swift */,
+				943A4DAB28D4BF8E007C925C /* BookSearchNoCancellationLiveView.swift */,
+				943A4DA528D4BF8E007C925C /* BookSearchNoCancellationView.swift */,
+				943A4DA928D4BF8E007C925C /* BookSearchRowView.swift */,
+				943A4DA728D4BF8E007C925C /* BookSearchTaskCancellationView.swift */,
+				943A4DA828D4BF8E007C925C /* CooperativeTaskCancellationView.swift */,
+				943A4DA628D4BF8E007C925C /* MenuView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		943A4DA428D4BF79007C925C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				943A4DB428D4BF9B007C925C /* Book.swift */,
+				943A4DB328D4BF9B007C925C /* OpenLibrarySearch.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		9490124728C351C2007104EB /* swift-lang */ = {
 			isa = PBXGroup;
 			children = (
 				9490124A28C3546B007104EB /* collection */,
 				9490124828C351EF007104EB /* ErrorHandle.swift */,
 				949013A328C386FE007104EB /* Codable.swift */,
+				94961B2728D0D47800B806B8 /* ControlFlow.swift */,
+				94961B2928D0D51E00B806B8 /* Enumerations.swift */,
+				94961B2B28D0D5B600B806B8 /* Concurrency.swift */,
 			);
 			path = "swift-lang";
 			sourceTree = "<group>";
@@ -130,6 +250,7 @@
 		94A5DEF728B4822900724506 /* ios-playground */ = {
 			isa = PBXGroup;
 			children = (
+				943A4D8E28D4B8B3007C925C /* swiftui-module */,
 				9490124728C351C2007104EB /* swift-lang */,
 				9490FFA428BE37F4007104EB /* storage */,
 				94A5E03828B51BDA00724506 /* swiftui */,
@@ -158,6 +279,7 @@
 			children = (
 				94A5E03228B5163100724506 /* ButtonVC.swift */,
 				94A5E03928B51BFF00724506 /* TextVC.swift */,
+				94C64A6D28DA1A5F005774AD /* AutoLayoutVC.swift */,
 			);
 			path = uikit;
 			sourceTree = "<group>";
@@ -264,31 +386,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				9490F97228BB14A4007104EB /* ShapeDemo.swift in Sources */,
+				943A4DB528D4BF9B007C925C /* OpenLibrarySearch.swift in Sources */,
 				9476676028B90F2C00B56774 /* CountdownDemo.swift in Sources */,
+				943A4D9828D4B912007C925C /* WordSearchView.swift in Sources */,
 				9476676228B90F5900B56774 /* ZStackDemo.swift in Sources */,
 				940A897A28B92E14002BF205 /* FrameDemo.swift in Sources */,
 				94A5E03628B516F600724506 /* DemoStructure.swift in Sources */,
+				943A4DAF28D4BF8E007C925C /* CooperativeTaskCancellationView.swift in Sources */,
+				943A4DB628D4BF9B007C925C /* Book.swift in Sources */,
+				943A4D9F28D4B921007C925C /* WordsAPI.swift in Sources */,
+				943A4DB128D4BF8E007C925C /* BookSearchActorTaskCancellationView.swift in Sources */,
+				943A4DAD28D4BF8E007C925C /* MenuView.swift in Sources */,
 				9465343728C38E9C0084E3E2 /* TextFieldDemo.swift in Sources */,
+				943A4D9D28D4B912007C925C /* WordDetailsViewNoViewModel.swift in Sources */,
+				943A4D9B28D4B912007C925C /* LibraryView.swift in Sources */,
 				9476675A28B908FA00B56774 /* TextDemo.swift in Sources */,
+				94961B2A28D0D51E00B806B8 /* Enumerations.swift in Sources */,
 				949013A428C386FE007104EB /* Codable.swift in Sources */,
 				94D12CB428CAE9EC00517BE7 /* ToolbarDemo.swift in Sources */,
 				9490F97428BB536D007104EB /* AlignmentDemo.swift in Sources */,
 				9490F97028BB11D7007104EB /* GridDemo.swift in Sources */,
+				943A4D9A28D4B912007C925C /* WordDetailsView.swift in Sources */,
 				949011B828C33931007104EB /* ListDemo.swift in Sources */,
 				94A5E03328B5163100724506 /* ButtonVC.swift in Sources */,
+				943A4DAC28D4BF8E007C925C /* BookSearchNoCancellationView.swift in Sources */,
+				943A4DB028D4BF8E007C925C /* BookSearchRowView.swift in Sources */,
 				9476675C28B90E2A00B56774 /* ProgressDemo.swift in Sources */,
+				943A4DB828D4BFBB007C925C /* TaskCancellationScreen.swift in Sources */,
 				9490124C28C3548A007104EB /* Dictionary.swift in Sources */,
+				943A4DA128D4B94C007C925C /* WordBrowserScreen.swift in Sources */,
 				9476675828B908E400B56774 /* ImageDemo.swift in Sources */,
+				943A4D9C28D4B912007C925C /* AddWordView.swift in Sources */,
 				94A5DEFD28B4822900724506 /* ViewController.swift in Sources */,
 				94A5DEF928B4822900724506 /* AppDelegate.swift in Sources */,
 				94A5E03A28B51BFF00724506 /* TextVC.swift in Sources */,
+				94961B2C28D0D5B600B806B8 /* Concurrency.swift in Sources */,
+				94961B2828D0D47800B806B8 /* ControlFlow.swift in Sources */,
 				94767EED28B7645900B02512 /* SwiftWithUikitVC.swift in Sources */,
 				9490FFA628BE3815007104EB /* UserDefaultsDemo.swift in Sources */,
 				9465162328C8D81D00FA3E37 /* NavigationDemo.swift in Sources */,
 				9465162528C8E62000FA3E37 /* DragDropDemo.swift in Sources */,
+				943A4DAE28D4BF8E007C925C /* BookSearchTaskCancellationView.swift in Sources */,
+				943A4DB228D4BF8E007C925C /* BookSearchNoCancellationLiveView.swift in Sources */,
 				94767EEF28B7683500B02512 /* VStackDemo.swift in Sources */,
 				9490124928C351EF007104EB /* ErrorHandle.swift in Sources */,
+				94C64A6E28DA1A5F005774AD /* AutoLayoutVC.swift in Sources */,
 				9476675E28B90E9900B56774 /* HStackDemo.swift in Sources */,
+				943A4D9928D4B912007C925C /* DefinitionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -58,7 +58,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             DemoItem(name: "Alignment", vc: AlignmentDemo()),
             DemoItem(name: "List", vc: ListDemo()),
             DemoItem(name: "TextField", vc: TextFieldDemo()),
-            DemoItem(name: "Hero Animation", vc: NavigationDemo())
+            DemoItem(name: "Hero Animation", vc: NavigationDemo()),
+            DemoItem(name: "WordBrowser", vc: WordBrowserScreen()),
+            DemoItem(name: "TaskCancellation", vc: TaskCancellationScreen()),
         ],
     ]
 

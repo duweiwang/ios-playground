@@ -57,7 +57,7 @@ struct ListView: View {
         Item(name: "Wallet", scheme: "wallet://"),//shoebox://    /// 验证通过
         
         Item(name: "Calculator", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=calc://"),///
-        Item(name: "Compass", scheme: "prefs:root=COMPASS"),
+        Item(name: "指南针", scheme: ""),
         Item(name: "Phone", scheme: "telprompt://"),
         Item(name: "Phone-2", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=mobilephone://"),
         Item(name: "Translate", scheme: "itranslate://"),
@@ -67,6 +67,7 @@ struct ListView: View {
         Item(name: "设置", scheme: "com.apple.preferences://"),
         Item(name: "相机", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=camera://"),
         Item(name: "天气", scheme: "shortcuts://x-callback-url/run-shortcut?x-error=weather://"),
+        Item(name: "1password", scheme: "onepassword://"),
     ]
 
     var body: some View {
