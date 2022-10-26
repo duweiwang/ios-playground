@@ -79,7 +79,8 @@ struct LittleSquares: View {
         GeometryReader { proxy in
             HStack(spacing: 5) {
                 ForEach(0 ..< self.maxSquares(proxy), id: \.self) { _ in
-                    RoundedRectangle(cornerRadius: 5).frame(width: self.sqSize, height: self.sqSize)
+                    RoundedRectangle(cornerRadius: 5)
+                        .frame(width: self.sqSize, height: self.sqSize)
                         .foregroundColor(self.allFit(proxy) ? .green : .red)
                 }
             }

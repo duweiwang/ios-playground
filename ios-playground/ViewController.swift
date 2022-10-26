@@ -61,6 +61,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             DemoItem(name: "Hero Animation", vc: NavigationDemo()),
             DemoItem(name: "WordBrowser", vc: WordBrowserScreen()),
             DemoItem(name: "TaskCancellation", vc: TaskCancellationScreen()),
+            
+            DemoItem(name: "多个动画", vc: MultipleAnim()),
+            DemoItem(name: "缩放动画", vc: ScaleCircleAnim())
         ],
     ]
 

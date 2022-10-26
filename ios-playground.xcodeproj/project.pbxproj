@@ -10,6 +10,7 @@
 		940A897A28B92E14002BF205 /* FrameDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A897928B92E14002BF205 /* FrameDemo.swift */; };
 		940A8B8528B9CC9D002BF205 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 940A8B8428B9CC9D002BF205 /* MarkdownUI */; };
 		940A8D0028BA0384002BF205 /* RichText in Frameworks */ = {isa = PBXBuildFile; productRef = 940A8CFF28BA0384002BF205 /* RichText */; };
+		94198FC729078160006AC092 /* StatePassDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94198FC629078160006AC092 /* StatePassDemo.swift */; };
 		943A4D9828D4B912007C925C /* WordSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9228D4B911007C925C /* WordSearchView.swift */; };
 		943A4D9928D4B912007C925C /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9328D4B911007C925C /* DefinitionView.swift */; };
 		943A4D9A28D4B912007C925C /* WordDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A4D9428D4B912007C925C /* WordDetailsView.swift */; };
@@ -59,10 +60,13 @@
 		94A5E03A28B51BFF00724506 /* TextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5E03928B51BFF00724506 /* TextVC.swift */; };
 		94C64A6E28DA1A5F005774AD /* AutoLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C64A6D28DA1A5F005774AD /* AutoLayoutVC.swift */; };
 		94D12CB428CAE9EC00517BE7 /* ToolbarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D12CB328CAE9EC00517BE7 /* ToolbarDemo.swift */; };
+		94E9317329079049004DF7F4 /* ScaleCircleAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E9317229079049004DF7F4 /* ScaleCircleAnim.swift */; };
+		94E9317529093DCF004DF7F4 /* MultipleAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E9317429093DCF004DF7F4 /* MultipleAnim.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		940A897928B92E14002BF205 /* FrameDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameDemo.swift; sourceTree = "<group>"; };
+		94198FC629078160006AC092 /* StatePassDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePassDemo.swift; sourceTree = "<group>"; };
 		943A4D9228D4B911007C925C /* WordSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordSearchView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/WordSearchView.swift"; sourceTree = "<group>"; };
 		943A4D9328D4B911007C925C /* DefinitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefinitionView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/DefinitionView.swift"; sourceTree = "<group>"; };
 		943A4D9428D4B912007C925C /* WordDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordDetailsView.swift; path = "../../../../../../iosProject/SwiftUI-Concurrency-Essentials/WordBrowser/WordBrowser/Views/WordDetailsView.swift"; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 		94A5E03928B51BFF00724506 /* TextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextVC.swift; sourceTree = "<group>"; };
 		94C64A6D28DA1A5F005774AD /* AutoLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutVC.swift; sourceTree = "<group>"; };
 		94D12CB328CAE9EC00517BE7 /* ToolbarDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarDemo.swift; sourceTree = "<group>"; };
+		94E9317229079049004DF7F4 /* ScaleCircleAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleCircleAnim.swift; sourceTree = "<group>"; };
+		94E9317429093DCF004DF7F4 /* MultipleAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleAnim.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +293,7 @@
 		94A5E03828B51BDA00724506 /* swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				94E9317129079019004DF7F4 /* animation */,
 				94767EEE28B7683500B02512 /* VStackDemo.swift */,
 				9476675728B908E400B56774 /* ImageDemo.swift */,
 				9476675928B908FA00B56774 /* TextDemo.swift */,
@@ -303,8 +310,18 @@
 				9465162228C8D81D00FA3E37 /* NavigationDemo.swift */,
 				9465162428C8E62000FA3E37 /* DragDropDemo.swift */,
 				94D12CB328CAE9EC00517BE7 /* ToolbarDemo.swift */,
+				94198FC629078160006AC092 /* StatePassDemo.swift */,
 			);
 			path = swiftui;
+			sourceTree = "<group>";
+		};
+		94E9317129079019004DF7F4 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				94E9317229079049004DF7F4 /* ScaleCircleAnim.swift */,
+				94E9317429093DCF004DF7F4 /* MultipleAnim.swift */,
+			);
+			path = animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +416,8 @@
 				943A4DAD28D4BF8E007C925C /* MenuView.swift in Sources */,
 				9465343728C38E9C0084E3E2 /* TextFieldDemo.swift in Sources */,
 				943A4D9D28D4B912007C925C /* WordDetailsViewNoViewModel.swift in Sources */,
+				94198FC729078160006AC092 /* StatePassDemo.swift in Sources */,
+				94E9317329079049004DF7F4 /* ScaleCircleAnim.swift in Sources */,
 				943A4D9B28D4B912007C925C /* LibraryView.swift in Sources */,
 				9476675A28B908FA00B56774 /* TextDemo.swift in Sources */,
 				94961B2A28D0D51E00B806B8 /* Enumerations.swift in Sources */,
@@ -433,6 +452,7 @@
 				94C64A6E28DA1A5F005774AD /* AutoLayoutVC.swift in Sources */,
 				9476675E28B90E9900B56774 /* HStackDemo.swift in Sources */,
 				943A4D9928D4B912007C925C /* DefinitionView.swift in Sources */,
+				94E9317529093DCF004DF7F4 /* MultipleAnim.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +591,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5XFZTU23C2;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-playground/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -598,7 +618,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5XFZTU23C2;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-playground/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
